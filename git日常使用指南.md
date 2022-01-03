@@ -124,3 +124,17 @@ git config - l # 参看配置信息
 >   doc/*.txt # 会忽略doc/notes.txt，但不会忽略doc/servers/arch.txt
 >   ```
 
+## git日常报错问题解决
+
+> ### Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054 错误解决
+
+> - ![image-20220103215608841](C:\Users\o水歌儿\AppData\Roaming\Typora\typora-user-images\image-20220103215608841.png)
+>
+> - 第一种方式开代理，但不一定成功！
+>
+> - 第二种方式：
+>
+>   ```bash
+>   git config --global http:sslVerify "FALSE"
+>   ```
+
